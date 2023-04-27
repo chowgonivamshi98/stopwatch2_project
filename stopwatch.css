@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+
+body {
+  background-color: #222242;
+  font-family: "Bruno Ace", cursive;
+  height: 100%;
+  text-align: center;
+}
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+}
+#stop {
+  font-family: "Bruno Ace", cursive;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+  margin-top: 15%;
+}
+
+#milliseconds {
+  color: coral;
+}
+
+button {
+  background-color: #222242;
+  padding: 15px 38px;
+  border-radius: 28px;
+  letter-spacing: 4px;
+  margin: 5px;
+}
+
+.wrapper p sub {
+  font-size: 10px;
+}
+.wrapper p {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: black;
+  width: 80%;
+  font-size: 3em;
+  padding: 23px 10px;
+  margin-top: 10%;
+  border-right-width: 20px;
+  border-left-width: 20px;
+  margin-left: 8%;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes shine {
+  0%,
+  100% {
+    box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, 0.5);
+  }
+}
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #222242;
+  border: solid 1px #fff;
+  color: #ffa600;
+}
